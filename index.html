@@ -14,7 +14,9 @@ layout: default
     </div>
     <br>
     <div class="postTitle">
-    <a class='postLink' href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+    <a class='postLink' href="{{site.url}}{{site.baseurl}}{{post.url}}">
+      {{post.title}}</a><br>
+      <p>{{site.url}}|||{{site.baseurl}}|||{{post.url}}</p>
     </div>
     <div class="postExt">
    {{ post.content | strip_html | truncatewords:20}}
